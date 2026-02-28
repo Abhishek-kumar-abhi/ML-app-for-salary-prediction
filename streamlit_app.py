@@ -79,11 +79,11 @@ def main():
             with col2:
                 st.metric(
                     label="Predicted Salary",
-                    value=f"${salary:,.2f}",
+                    value=f"Rs. {salary:,.2f}",
                     delta=None
                 )
             
-            st.success(f"✅ Based on your {years_of_experience:.1f} years of experience, your predicted salary is **${salary:,.2f}**")
+            st.success(f"✅ Based on your {years_of_experience:.1f} years of experience, your predicted salary is **Rs. {salary:,.2f}**")
             
         except Exception as e:
             st.error(f"❌ Prediction failed: {str(e)}")
